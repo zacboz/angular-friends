@@ -1,5 +1,4 @@
-var app = angular.module('AngularFriends');
-app.controller('FriendController', function($scope, $http){
+angular.module('AngularFriends').controller('FriendController', function($scope, $http){
 
   $scope.orderAttribute = 'name';
   $scope.orderReverse = "+";

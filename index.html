@@ -20,19 +20,20 @@
         <input class="form-control" placeholder="Search Location" ng-model='friendFilter.current_location.name'>
 
 
-        <select class="input-medium" ng-model='sortProp'>
+        <!-- <select class="input-medium" ng-model='sortProp'>
           <option value='name'>Name</option>
           <option value='friend_count'>#Friend</option>
           <option value='current_location.city'>City</option>
           <option value='current_location.state'>State</option>
           <option value='current_location.country'>Country</option>
-        </select>
+        </select> -->
 
         <select class="input-medium" ng-model='sortDirection'>
           <option value="-">Descending</option>
           <option value="+">Ascending</option>
         </select>
 
+        <select ng-model='sortProp' ng-options='friend.value as friend.label for friend in newArray'></select>
       </div>
     </form>
 

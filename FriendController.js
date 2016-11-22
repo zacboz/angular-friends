@@ -400,6 +400,28 @@ angular.module('friendMachine').controller('FriendController', function($scope){
   }
 ]
 
+$scope.newArray = [{
+    value: 'name',
+    label: 'Name'
+  },
+  {
+    value: 'friend_count',
+    label: '#Friend'
+  },
+  {
+    value: 'current_location.city',
+    label: 'City'
+  },
+  {
+    value: 'current_location.state',
+    label: 'State'
+  },
+  {
+    value: 'current_location.country',
+    label: 'Country'
+  }
+];
+
 $scope.searchName = function(){
   $scope.friendFilter.name = '';
 }
